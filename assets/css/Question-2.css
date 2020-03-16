@@ -1,0 +1,76 @@
+body {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/banner.png);
+}
+
+header {
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+    position: relative;
+    left: 50%;
+}
+
+ul li {
+    display: inline-block;
+    padding: 10px 3px;
+    list-style: none;
+    white-space: nowrap;
+    text-align: -webkit-match-parent;
+}
+
+ul li a {
+    display: inline-block;
+    color: azure;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+}
+
+ul li a:hover {
+    background-color: brown;
+    transition: all 0.3s ease 0s;
+}
+
+table {
+    margin-top: 100px;
+    margin-left: 450px;
+    position: relative;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: double;
+    font-style: italic;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+}
+
+.center {
+    border: solid 5px;
+}
+
+.column {
+    border-right: solid 5px;
+    border-left: solid 5px;
+}
+
+.row {
+    border-top: solid 5px;
+    border-bottom: solid 5px;
+}
