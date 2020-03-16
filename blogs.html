@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>My Work</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/blgs.css">
+</head>
+
+<body target=" _blank">
+    <header>
+        <ul>
+            <li>
+                <a href="index.html"> home</a>
+            </li>
+        </ul>
+    </header>
+    <div>
+        <section>
+            <p class="title"> 4. CSS units(%,em,rem,px) in element reponsivness comparision</p>
+            <article>
+                <p>Inorder to compare these units let's consider each one by one</p>
+                <h3>Pixels</h3>
+                <p>Using font-sizes, element sizes and spacing in pixels is like treating the web as there is only one end user which is the developer. In most browsers, a user can set their default browser font-size to be a different size to the default
+                    (typically 16px). If the user sets their default to some size by increasing or decreasing it , all font-sizes should scale accordingly. However, if the website explicitly sets font-sizes in pixels, a heading set at the original scale
+                    will always be the same. That might sound great from a designer/developer point of view but, it depends on the end user. In these case the users can still zoom in and out to get there preferable view.</p>
+
+                <h3>EM</h3>
+                <p>
+                    For values given with em, it is equal to the computed size of that element’s parent. To illustrate this, If there is a div element defined with font-size: 16px then for that div and for its children 1em will be computed as 16px. If font-size is not defined
+                    explicitly, that element will inherit it from the parent element. The inheritance continues to take place this way amongst ancestors up until the root element. Default font-size of the root element is provided by browser and it is
+                    usually 16px. using em will make some trouble by compounding when multiple em-font-sized elements are within one another. This can become a problem and can lead to unintended consequences in the designs.
+                </p>
+                <h3>REM</h3>
+                <p>Values given in rem are relative to the root html element, not to the parent element. That is, If font-size of the root element is 16px then 1 rem = 16px for all elements and if it is 2rem = 32px. If font-size is not explicitly defined
+                    in root element then 1rem will be equal to the default font-size provided by the browser which is usually 16px. When it comes to spacing and font-sizing it is preferable to use rem. Since rem uses root element’s font-size instead of
+                    its parent’s font-size. unlike em , using rem units allow us to avoid the compounding effect of em units. With rem things are always and consistently based on the font-size or the root element, so there are no surprises no trouble.
+
+                </p>
+                <h3>%</h3>
+                <p>
+                    Using % sor spacifying values, is one of a solution for responsiveness. As mentioned earlier the default font-size of most browsers is 16px. For example setting font-size: 100% will make 1rem = 16px. But a better way is to set font-size: 62.5%. Because
+                    62.5% of 16px is 10px. Which makes 1rem = 10px.
+
+                </p>
+
+                <p>source : <a href="https://engageinteractive.co.uk/blog/em-vs-rem-vs-px"> link1</a> ,<a href="https://medium.com/code-better/css-units-for-font-size-px-em-rem-79f7e592bb97">link2</a> </p>
+            </article>
+            <p class="date">March 15, 2020 : 9:00pm</p>
+        </section>
+
+
+    </div>
+</body>
+
+</html>
