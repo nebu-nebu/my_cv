@@ -1,97 +1,137 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>My Work</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/css/blgs.css">
+    <title>Gallery - My Porsonal Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
-<body target=" _blank">
-    <header>
-        <ul>
-            <li>
-                <a href="index.html"> home</a>
-            </li>
-        </ul>
-    </header>
-    <div>
-        <section>
-            <p class="title"> 4. CSS units(%,em,rem,px) in element reponsivness comparision</p>
-            <article>
-                <p>Inorder to compare these units let's consider each one by one</p>
-                <h3>Pixels</h3>
-                <p>Using font-sizes, element sizes and spacing in pixels is like treating the web as there is only one end user which is the developer. In most browsers, a user can set their default browser font-size to be a different size to the default
-                    (typically 16px). If the user sets their default to some size by increasing or decreasing it , all font-sizes should scale accordingly. However, if the website explicitly sets font-sizes in pixels, a heading set at the original scale
-                    will always be the same. That might sound great from a designer/developer point of view but, it depends on the end user. In these case the users can still zoom in and out to get there preferable view.</p>
+<body link="black">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <div class="page-wrap">
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html"><span class="icon fa-home"></span></a></li>
+                <li><a href="gallery.html" class="active"><span class="icon fa-camera-retro"></span></a></li>
+                <li><a href="aboutme.html"><span class="icon fa-file-text-o"></span></a></li>
+                <li><a href="myworks.html"><span class="icon fa-tasks"></span></a></li>
+                <li><a href="blogs.html"><span class="icon fa-archive"></span></a></li>
+            </ul>
+        </nav>
+        <section id="main">
+            <header id="header">
+                <div>Designed <span>by NEBYU</span></div>
+            </header>
+            <section id="galleries">
+                <div class="gallery">
+                    <header>
+                        <h1>Gallery</h1>
+                        <ul class="tabs">
+                            <li><a href="#" data-tag="all" class="button active">All</a></li>
+                            <li><a href="#" data-tag="people" class="button">People</a></li>
+                            <li><a href="#" data-tag="place" class="button">Places</a></li>
+                            <li><a href="#" data-tag="thing" class="button">Things</a></li>
+                        </ul>
+                    </header>
 
-                <h3>EM</h3>
-                <p>
-                    For values given with em, it is equal to the computed size of that element’s parent. To illustrate this, If there is a div element defined with font-size: 16px then for that div and for its children 1em will be computed as 16px. If font-size is not defined
-                    explicitly, that element will inherit it from the parent element. The inheritance continues to take place this way amongst ancestors up until the root element. Default font-size of the root element is provided by browser and it is
-                    usually 16px. using em will make some trouble by compounding when multiple em-font-sized elements are within one another. This can become a problem and can lead to unintended consequences in the designs.
-                </p>
-                <h3>REM</h3>
-                <p>Values given in rem are relative to the root html element, not to the parent element. That is, If font-size of the root element is 16px then 1 rem = 16px for all elements and if it is 2rem = 32px. If font-size is not explicitly defined
-                    in root element then 1rem will be equal to the default font-size provided by the browser which is usually 16px. When it comes to spacing and font-sizing it is preferable to use rem. Since rem uses root element’s font-size instead of
-                    its parent’s font-size. unlike em , using rem units allow us to avoid the compounding effect of em units. With rem things are always and consistently based on the font-size or the root element, so there are no surprises no trouble.
+                    <div class="content">
+                        <div class="media all people">
+                            <a href="./assets/images/people/fulls/02.jpg"><img src="./assets/images/people/fulls/02.jpg" alt="1" title="This right here is a caption." /></a>
+                        </div>
+                        <div class="media all place">
+                            <a href="./assets/images/people/fulls/07.jpeg"><img src="./assets/images/people/fulls/07.jpeg" alt="2" title="This right here is a caption." /></a>
+                        </div>
+                        <div class="media all thing">
+                            <a href="./assets/images/people/fulls/04.jpeg"><img src="./assets/images/people/fulls/04.jpeg" alt="3" title="This right here is a caption." /></a>
+                        </div>
+                        <div class="media all people">
+                            <a href="./assets/images/people/fulls/05.jpeg"><img src="./assets/images/people/fulls/05.jpeg" alt="4" title="This right here is a caption." /></a>
+                        </div>
+                        <div class="media all place">
+                            <a href="./assets/images/people/fulls/06.jpeg"><img src="./assets/images/people/fulls/06.jpeg" alt="5" title="This right here is a caption." /></a>
+                        </div>
+                        <div class="media all thing">
+                            <a href="./assets/images/people/fulls/07.jpeg"><img src="./assets/images/people/fulls/07.jpeg" alt="6" title="This right here is a caption." /></a>
+                        </div>
+                        <div class="media all people">
+                            <a href="./assets/images/people/fulls/08.jpeg"><img src="./assets/images/people/fulls/08.jpeg" alt="7" title="This right here is a caption." /></a>
+                        </div>
+                        <div class="media all place">
+                            <a href="./assets/images/people/fulls/05.jpeg"><img src="./assets/images/people/fulls/05.jpeg" alt="8" title="This right here is a caption." /></a>
+                        </div>
+                        <div class="media all thing">
+                            <a href="./assets/images/people/fulls/05.jpeg"><img src="./assets/images/people/fulls/05.jpeg" alt="9" title="This right here is a caption." /></a>
+                        </div>
+                        <div class="media all people">
+                            <a href="./assets/images/people/fulls/11.jpeg"><img src="./assets/images/people/fulls/11.jpeg" alt="11" title="This right here is a caption." /></a>
+                        </div>
+                        <div class="media all place">
+                            <a href="./assets/images/people/fulls/04.jpeg"><img src="./assets/images/people/fulls/04.jpeg" alt="12" title="This right here is a caption." /></a>
+                        </div>
+                        <div class="media all thing">
+                            <a href="./assets/images/people/fulls/05.jpeg"><img src="./assets/images/people/fulls/05.jpeg" alt="13" title="This right here is a caption." /></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="social column">
+                    <h3>About Me</h3>
+                    <p>
+                        <h4>My name is Nebyu andualem. I wes born in 1987, in Amhara Region, Debre Markos. I am IT student in ADDIS ABABA Universty, in <a href="http://www.aait.edu.et/center-it-scientific-computing">ITSC</a> departement. I do have work per-time
+                            as a Manager, Teacher, web deasinging and telegram bot devoloping.</h4>
+                    </p>
+                    <p>
+                        <h4>I love to learn and I continually seek to understand the world I live in. I like to read about history, sociology, politics, philosophy, business, finance, and anything related to maximising human potential. You can find out about
+                            some of my favourite books <a href="https://www.goodreads.com/list/show/89548.Best_Amharic_Books">here</a>. <br> <br>This is my personal website where I plan to write about the things I’m interested in, share what I’m learning
+                            and give updates on the interesting work and projects I’m involved in. You can also hire me to help you, your team, or your organisation to solve a problem or improve your performance.</h4>
+                    </p>
+                    <h3>Follow Me</h3>
+                    <ul class="icons">
+                        <li><a href="https://twitter.com/home" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="https://www.facebook.com/mulat.asetatekia" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://www.facebook.com/mulat.asetatekia" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Get in Touch</h3>
+                    <form action="mailto: neba.23andua@gmail.com " method="post">
+                        <div class="field half first">
+                            <label for="name">Name</label>
+                            <input name="name" id="name" type="text" placeholder="Name">
+                        </div>
+                        <div class="field half">
+                            <label for="email">Email</label>
+                            <input name="email" id="email" type="email" placeholder="Email">
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+                        </div>
+                        <ul class="actions">
+                            <li><input value="Send Message" class="button" type="submit"></li>
+                        </ul>
+                    </form>
+                </div>
 
-                </p>
-                <h3>%</h3>
-                <p>
-                    Using % sor spacifying values, is one of a solution for responsiveness. As mentioned earlier the default font-size of most browsers is 16px. For example setting font-size: 100% will make 1rem = 16px. But a better way is to set font-size: 62.5%. Because
-                    62.5% of 16px is 10px. Which makes 1rem = 10px.
-
-                </p>
-
-                <p>source : <a href="https://engageinteractive.co.uk/blog/em-vs-rem-vs-px"> link1</a> ,<a href="https://medium.com/code-better/css-units-for-font-size-px-em-rem-79f7e592bb97">link2</a> </p>
-            </article>
-            <p class="date">March 15, 2020 : 9:00pm</p>
-        </section>
-
-        <section>
-            <p class="title"> 5. Browser interpretation when default value(16px) changed to 200px</p>
-            <article>
-                It is obvious that the default values of browsers can be difference as per the type, let's take most used default value 16px. If in any case there is no font size chage in the browser 1em = 16px. But when web is developed the size we prefer can be 200px
-                or 300px or any size. Therefore when we set our own prefered size let's say 200px now 1em = 200px, then the styling will be callculated with the new setted value. </article>
-            <p class="date">March 16, 2020 : 5:00pm</p>
-        </section>
-        <section>
-            <p class="title"> 6. Specific changes in CSS-3</p>
-
-            <article>
-                <h3>CSS Animations and Transitions</h3>
-                <p>
-                    There are two ways to create CSS animations. The first is very easy, it is done through animating the changes of CSS properties with the transition declaration. With transitions, you can create hover or mouse down effects, or you can trigger the animation
-                    by changing the style of an element with JavaScript. The second way for defining animations is a bit more complicated - it involves the description of specific moments of the animation with the code>@keyframe rule. This allows you
-                    to have repeating animations that don't depend on user actions or JavaScript to get triggered.
-                </p>
-                <h3>Calculating Values With calc()</h3>
-                <p>It allows to do simple arithmetic calculations in CSS. Can be used anywhere a length or a size is required. What is even cooler, is that mixing different units is possible, like percentages and pixels. This makes a lot of layout hacks
-                    that you might have used in the past obsolete.</p>
-                <h3>Webfonts</h3>
-                <p>
-                    Services like Google Fonts and typekit, which let us to embed beautiful fonts by simply including a stylesheet in our page. There are even icon fonts like fontawesome, which contain pretty vector icons, instead of letters or numbers. This was all made
-                    possible by the code > @font-face rule, which lets us to define the name, characteristics and source files for fonts, which we can later refer in our font/font-family declarations.
-                </p>
-                <h3>Box Sizing</h3>
-                <p>
-                    The biggest consept in CSS is the box model-the CSS width and height of an element affected by its padding and borders. This little feature breaks layouts, but finally there is a way to restore our sanity by using the box-sizing rule. We can set it to
-                    border-box, which makes elements behave exactly the way you expect.
-                </p>
-                <h3>Multiple Backgrounds</h3>
-                <p>
-                    With multiple backgrounds, designers can achieve very interesting effects. They can stack different images as backgrounds of the same element. Each image (or layer) can be moved and animated independently. All background-releated CSS rules can now take
-                    a comma-delimited list of properties, each for the specific background image.
-                </p>
-                <p>source: <a href="https://tutorialzine.com/2013/10/12-awesome-css3-features-you-can-finally-use"> link1</a> </p>
-            </article>
-            <p class="date">March 17, 2020 : 11:00pm</p>
+            </section>
+            <footer id="footer">
+                <div class="copyright">
+                    &copy;Designed By: <a href="index.html"> Nebyu andualem</a>. Images from: <a href="https://unsplash.com/">Unsplash</a>.
+                </div>
+            </footer>
         </section>
     </div>
+
 </body>
 
 </html>
